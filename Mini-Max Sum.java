@@ -36,6 +36,28 @@ public class Solution {
         }
         System.out.print(b[0]+" "+b[4]);
     }
+    
+    //it can be a another way to implement this logic
+    
+//     static void miniMaxSum(int[] arr) {
+//         long s=0,s2=0,s3=0;
+//         for (int i = 0; i < 5; i++){
+//             s=0;
+//             for (int j = 0; j < 5; j++){
+//                 if(i!=j){
+//                     s=s+(long)arr[j];
+//                 }}
+//                 if(s>s2)
+//                     s2=s;
+//                 else if(s<s3)
+//                     s3=s;
+//                 if(s3==0)
+//                     s3=s;
+//         }
+        
+//         System.out.print(s3+" "+s2);
+//     }
+
 
     private static final Scanner scanner = new Scanner(System.in);
 
