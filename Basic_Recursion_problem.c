@@ -69,3 +69,48 @@ int digits(int n){
 }
 
 ////To find the given nuumber is Pallindrom
+
+
+#include <stdio.h>
+int digits(int,int);
+int main()
+{
+    int n,s=0;
+    scanf("%d",&n);
+    int a=digits(n,s);
+    if(a==n)
+    printf("Palindrom");
+    else
+    printf("Not a Palindrom");
+    return 0;
+}
+int digits(int n,int s){
+    if(n==0)
+    return ;
+    else{
+    s=s*10+n%10;
+    return digits(n/10,s);
+    }
+    return s;
+}
+
+///To find the reverse of given number 
+
+#include <stdio.h>
+int digits(int,int);
+int main()
+{
+    int n,s=0;
+    scanf("%d",&n);
+    printf("%d",digits(n,s));
+    return 0;
+}
+int digits(int n,int s){
+    if(n==0)
+    return;
+    else{
+    s=s*10+n%10;
+    return digits(n/10,s);
+    }
+   return s;
+}
